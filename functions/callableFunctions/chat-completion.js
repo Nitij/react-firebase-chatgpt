@@ -9,7 +9,7 @@ if (admin.apps.length === 0) {
 exports.chatCompletion = functions.https.onCall(async (data, context) => {
   try {
     const { prompt } = data;
-    const OPENAI_API_KEY = "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";
+    const OPENAI_API_KEY = "";
     const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
     const aiModel = "gpt-3.5-turbo-1106";
 
